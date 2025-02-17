@@ -21,6 +21,7 @@ Further down the data frames are created according to the array and written out 
 Once the delta tables are created reports can be created using the semantic model of the lakehouse. 
 
 **PDFExtractStructuredContent.zip (Pipeline)**
+
 The .zip file "PDFExtractStructuredContent.zip" contains the Fabric Data Factory pipeline. To import it create a new pipeline and in the Data Factory editor then import the .zip file. 
 To use the pipeline go to the "Get Metadata" activity and adjust the File path and folder by clicking "Browse" in the File path line. 
 To make sure that the process finishes the "Sequential" parameter in the settings of the "ForEach" activity is set to true. To run all the files in the source folder in parallel, untick 
