@@ -1,4 +1,4 @@
-GetStructuredContentFromPDF_genericJSINExtr.ipynb (Notebook)
+**GetStructuredContentFromPDF_genericJSINExtr.ipynb (Notebook)**
 
 The actual version of the Notebook (GetStructuredContentFromPDF_genericJSONExtr.ipynb) contains one parameter: document_path
 The corresponding lakehouse should have a Files/xxx path that is used to store the .pdf files. For example "Files/PDF"
@@ -20,7 +20,8 @@ AOAI request and "xxxx.xxxx" is the json path to the particular column, that sho
 Further down the data frames are created according to the array and written out to the default lakehouse as delta tables. 
 Once the delta tables are created reports can be created using the semantic model of the lakehouse. 
 
-PDFExtractStructuredContent.zip (Pipeline)
+**PDFExtractStructuredContent.zip (Pipeline)**
+
 The .zip file "PDFExtractStructuredContent.zip" contains the Fabric Data Factory pipeline. To import it create a new pipeline and in the Data Factory editor then import the .zip file. 
 To use the pipeline go to the "Get Metadata" activity and adjust the File path and folder by clicking "Browse" in the File path line. 
 To make sure that the process finishes the "Sequential" parameter in the settings of the "ForEach" activity is set to true. To run all the files in the source folder in parallel, untick 
